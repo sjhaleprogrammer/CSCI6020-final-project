@@ -1,0 +1,14 @@
+project/
+│
+├── data_raw/
+│   └── raw_data.xlsx
+│
+├── datasets/
+│   └── all_states/
+│       └── all_states.csv
+│
+├── jupyter/
+│   └── your_notebooks.ipynb
+│
+├── README.md
+└── ...
