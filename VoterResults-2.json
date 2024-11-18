@@ -3,7 +3,7 @@
         "2024": {
             "State": "Alabama",
             "Electoral College Votes": 9,
-            "Election Result": "Republican",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 5039877,
@@ -29,7 +29,7 @@
         "2016": {
             "State": "Alabama",
             "Electoral College Votes": 9,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 4863300,
@@ -42,7 +42,7 @@
         "2012": {
             "State": "Alabama",
             "Electoral College Votes": 9,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 4822023,
@@ -55,7 +55,7 @@
         "2008": {
             "State": "Alabama",
             "Electoral College Votes": 9,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 4677464,
@@ -68,7 +68,7 @@
         "2004": {
             "State": "Alabama",
             "Electoral College Votes": 9,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 4530182,
@@ -96,7 +96,7 @@
         "2024": {
             "State": "Alaska",
             "Electoral College Votes": 3,
-            "Election Result": "Republican",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 733391,
@@ -122,7 +122,7 @@
         "2016": {
             "State": "Alaska",
             "Electoral College Votes": 3,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 741894,
@@ -135,7 +135,7 @@
         "2012": {
             "State": "Alaska",
             "Electoral College Votes": 3,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 731449,
@@ -148,7 +148,7 @@
         "2008": {
             "State": "Alaska",
             "Electoral College Votes": 3,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 686293,
@@ -161,7 +161,7 @@
         "2004": {
             "State": "Alaska",
             "Electoral College Votes": 3,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 648280,
@@ -189,7 +189,7 @@
         "2024": {
             "State": "Arizona",
             "Electoral College Votes": 11,
-            "Election Result": "Republican",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 7276316,
@@ -215,7 +215,7 @@
         "2016": {
             "State": "Arizona",
             "Electoral College Votes": 11,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 6931071,
@@ -228,7 +228,7 @@
         "2012": {
             "State": "Arizona",
             "Electoral College Votes": 11,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 6553255,
@@ -241,7 +241,7 @@
         "2008": {
             "State": "Arizona",
             "Electoral College Votes": 8,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 6500180,
@@ -254,7 +254,7 @@
         "2004": {
             "State": "Arizona",
             "Electoral College Votes": 8,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 5743834,
@@ -282,7 +282,7 @@
         "2024": {
             "State": "Arkansas",
             "Electoral College Votes": 6,
-            "Election Result": "Republican",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 3045637,
@@ -308,7 +308,7 @@
         "2016": {
             "State": "Arkansas",
             "Electoral College Votes": 6,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 2988248,
@@ -321,7 +321,7 @@
         "2012": {
             "State": "Arkansas",
             "Electoral College Votes": 6,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 2949131,
@@ -334,7 +334,7 @@
         "2008": {
             "State": "Arkansas",
             "Electoral College Votes": 6,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 2855390,
@@ -347,7 +347,7 @@
         "2004": {
             "State": "Arkansas",
             "Electoral College Votes": 6,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 2725714,
@@ -375,7 +375,7 @@
         "2024": {
             "State": "California",
             "Electoral College Votes": 54,
-            "Election Result": "Democratic",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 39538223,
@@ -401,7 +401,7 @@
         "2016": {
             "State": "California",
             "Electoral College Votes": 55,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 39250017,
@@ -414,7 +414,7 @@
         "2012": {
             "State": "California",
             "Electoral College Votes": 55,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 38041430,
@@ -427,7 +427,7 @@
         "2008": {
             "State": "California",
             "Electoral College Votes": 55,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 36756666,
@@ -440,7 +440,7 @@
         "2004": {
             "State": "California",
             "Electoral College Votes": 55,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 35893799,
@@ -468,7 +468,7 @@
         "2024": {
             "State": "Colorado",
             "Electoral College Votes": 10,
-            "Election Result": "Democratic",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 5773714,
@@ -494,7 +494,7 @@
         "2016": {
             "State": "Colorado",
             "Electoral College Votes": 9,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 5540545,
@@ -507,7 +507,7 @@
         "2012": {
             "State": "Colorado",
             "Electoral College Votes": 9,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 5187582,
@@ -520,7 +520,7 @@
         "2008": {
             "State": "Colorado",
             "Electoral College Votes": 9,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 4939456,
@@ -533,7 +533,7 @@
         "2004": {
             "State": "Colorado",
             "Electoral College Votes": 9,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 4601403,
@@ -561,7 +561,7 @@
         "2024": {
             "State": "Connecticut",
             "Electoral College Votes": 7,
-            "Election Result": "Democratic",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 3605944,
@@ -587,7 +587,7 @@
         "2016": {
             "State": "Connecticut",
             "Electoral College Votes": 7,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 3576452,
@@ -600,7 +600,7 @@
         "2012": {
             "State": "Connecticut",
             "Electoral College Votes": 7,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 3590347,
@@ -613,7 +613,7 @@
         "2008": {
             "State": "Connecticut",
             "Electoral College Votes": 7,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 3501252,
@@ -626,7 +626,7 @@
         "2004": {
             "State": "Connecticut",
             "Electoral College Votes": 7,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 3478712,
@@ -654,7 +654,7 @@
         "2024": {
             "State": "Delaware",
             "Electoral College Votes": 3,
-            "Election Result": "Democratic",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 989948,
@@ -680,7 +680,7 @@
         "2016": {
             "State": "Delaware",
             "Electoral College Votes": 3,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 952065,
@@ -693,7 +693,7 @@
         "2012": {
             "State": "Delaware",
             "Electoral College Votes": 3,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 917092,
@@ -706,7 +706,7 @@
         "2008": {
             "State": "Delaware",
             "Electoral College Votes": 3,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 873092,
@@ -719,7 +719,7 @@
         "2004": {
             "State": "Delaware",
             "Electoral College Votes": 3,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 830080,
@@ -747,7 +747,7 @@
         "2024": {
             "State": "Florida",
             "Electoral College Votes": 30,
-            "Election Result": "Republican",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 21538187,
@@ -773,7 +773,7 @@
         "2016": {
             "State": "Florida",
             "Electoral College Votes": 29,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 20612439,
@@ -786,7 +786,7 @@
         "2012": {
             "State": "Florida",
             "Electoral College Votes": 29,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 19317568,
@@ -799,7 +799,7 @@
         "2008": {
             "State": "Florida",
             "Electoral College Votes": 27,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 18328340,
@@ -812,7 +812,7 @@
         "2004": {
             "State": "Florida",
             "Electoral College Votes": 27,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 17397161,
@@ -840,7 +840,7 @@
         "2024": {
             "State": "Georgia",
             "Electoral College Votes": 16,
-            "Election Result": "Republican",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 10711908,
@@ -866,7 +866,7 @@
         "2016": {
             "State": "Georgia",
             "Electoral College Votes": 16,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 10310371,
@@ -879,7 +879,7 @@
         "2012": {
             "State": "Georgia",
             "Electoral College Votes": 16,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 9919945,
@@ -892,7 +892,7 @@
         "2008": {
             "State": "Georgia",
             "Electoral College Votes": 15,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 9685744,
@@ -905,7 +905,7 @@
         "2004": {
             "State": "Georgia",
             "Electoral College Votes": 15,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 8979935,
@@ -933,7 +933,7 @@
         "2024": {
             "State": "Hawaii",
             "Electoral College Votes": 4,
-            "Election Result": "Democratic",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 1455271,
@@ -959,7 +959,7 @@
         "2016": {
             "State": "Hawaii",
             "Electoral College Votes": 4,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 1428557,
@@ -972,7 +972,7 @@
         "2012": {
             "State": "Hawaii",
             "Electoral College Votes": 4,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 1392313,
@@ -985,7 +985,7 @@
         "2008": {
             "State": "Hawaii",
             "Electoral College Votes": 4,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 1288198,
@@ -998,7 +998,7 @@
         "2004": {
             "State": "Hawaii",
             "Electoral College Votes": 4,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 1262840,
@@ -1026,7 +1026,7 @@
         "2024": {
             "State": "Idaho",
             "Electoral College Votes": 4,
-            "Election Result": "Republican",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 1839106,
@@ -1052,7 +1052,7 @@
         "2016": {
             "State": "Idaho",
             "Electoral College Votes": 4,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 1683140,
@@ -1065,7 +1065,7 @@
         "2012": {
             "State": "Idaho",
             "Electoral College Votes": 4,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 1595728,
@@ -1078,7 +1078,7 @@
         "2008": {
             "State": "Idaho",
             "Electoral College Votes": 4,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 1523816,
@@ -1091,7 +1091,7 @@
         "2004": {
             "State": "Idaho",
             "Electoral College Votes": 4,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 1393262,
@@ -1119,7 +1119,7 @@
         "2024": {
             "State": "Illinois",
             "Electoral College Votes": 19,
-            "Election Result": "Democratic",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 12671821,
@@ -1145,7 +1145,7 @@
         "2016": {
             "State": "Illinois",
             "Electoral College Votes": 20,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 12801539,
@@ -1158,7 +1158,7 @@
         "2012": {
             "State": "Illinois",
             "Electoral College Votes": 20,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 12875255,
@@ -1171,7 +1171,7 @@
         "2008": {
             "State": "Illinois",
             "Electoral College Votes": 21,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 12901563,
@@ -1184,7 +1184,7 @@
         "2004": {
             "State": "Illinois",
             "Electoral College Votes": 21,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 12713956,
@@ -1212,7 +1212,7 @@
         "2024": {
             "State": "Indiana",
             "Electoral College Votes": 11,
-            "Election Result": "Republican",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 6785528,
@@ -1238,7 +1238,7 @@
         "2016": {
             "State": "Indiana",
             "Electoral College Votes": 11,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 6633053,
@@ -1251,7 +1251,7 @@
         "2012": {
             "State": "Indiana",
             "Electoral College Votes": 11,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 6537334,
@@ -1264,7 +1264,7 @@
         "2008": {
             "State": "Indiana",
             "Electoral College Votes": 11,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 6376792,
@@ -1277,7 +1277,7 @@
         "2004": {
             "State": "Indiana",
             "Electoral College Votes": 11,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 6237569,
@@ -1305,7 +1305,7 @@
         "2024": {
             "State": "Iowa",
             "Electoral College Votes": 6,
-            "Election Result": "Republican",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 3190369,
@@ -1331,7 +1331,7 @@
         "2016": {
             "State": "Iowa",
             "Electoral College Votes": 6,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 3134693,
@@ -1344,7 +1344,7 @@
         "2012": {
             "State": "Iowa",
             "Electoral College Votes": 6,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 3074186,
@@ -1357,7 +1357,7 @@
         "2008": {
             "State": "Iowa",
             "Electoral College Votes": 7,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 3002555,
@@ -1370,7 +1370,7 @@
         "2004": {
             "State": "Iowa",
             "Electoral College Votes": 7,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 2954451,
@@ -1398,7 +1398,7 @@
         "2024": {
             "State": "Kansas",
             "Electoral College Votes": 6,
-            "Election Result": "Republican",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 2937880,
@@ -1424,7 +1424,7 @@
         "2016": {
             "State": "Kansas",
             "Electoral College Votes": 6,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 2907289,
@@ -1437,7 +1437,7 @@
         "2012": {
             "State": "Kansas",
             "Electoral College Votes": 6,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 2885905,
@@ -1450,7 +1450,7 @@
         "2008": {
             "State": "Kansas",
             "Electoral College Votes": 6,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 2802134,
@@ -1463,7 +1463,7 @@
         "2004": {
             "State": "Kansas",
             "Electoral College Votes": 6,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 2735502,
@@ -1491,7 +1491,7 @@
         "2024": {
             "State": "Kentucky",
             "Electoral College Votes": 8,
-            "Election Result": "Republican",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 4505836,
@@ -1517,7 +1517,7 @@
         "2016": {
             "State": "Kentucky",
             "Electoral College Votes": 8,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 4436974,
@@ -1530,7 +1530,7 @@
         "2012": {
             "State": "Kentucky",
             "Electoral College Votes": 8,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 4380415,
@@ -1543,7 +1543,7 @@
         "2008": {
             "State": "Kentucky",
             "Electoral College Votes": 8,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 4269245,
@@ -1556,7 +1556,7 @@
         "2004": {
             "State": "Kentucky",
             "Electoral College Votes": 8,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 4126333,
@@ -1584,7 +1584,7 @@
         "2024": {
             "State": "Louisiana",
             "Electoral College Votes": 8,
-            "Election Result": "Republican",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 4657757,
@@ -1610,7 +1610,7 @@
         "2016": {
             "State": "Louisiana",
             "Electoral College Votes": 8,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 4681666,
@@ -1623,7 +1623,7 @@
         "2012": {
             "State": "Louisiana",
             "Electoral College Votes": 8,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 4601893,
@@ -1636,7 +1636,7 @@
         "2008": {
             "State": "Louisiana",
             "Electoral College Votes": 9,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 4410796,
@@ -1649,7 +1649,7 @@
         "2004": {
             "State": "Louisiana",
             "Electoral College Votes": 9,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 4523628,
@@ -1677,7 +1677,7 @@
         "2024": {
             "State": "Maine",
             "Electoral College Votes": 4,
-            "Election Result": "Democratic",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 1362359,
@@ -1703,7 +1703,7 @@
         "2016": {
             "State": "Maine",
             "Electoral College Votes": 4,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 1331479,
@@ -1716,7 +1716,7 @@
         "2012": {
             "State": "Maine",
             "Electoral College Votes": 4,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 1329192,
@@ -1729,7 +1729,7 @@
         "2008": {
             "State": "Maine",
             "Electoral College Votes": 4,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 1316456,
@@ -1742,7 +1742,7 @@
         "2004": {
             "State": "Maine",
             "Electoral College Votes": 4,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 1309217,
@@ -1770,7 +1770,7 @@
         "2024": {
             "State": "Maryland",
             "Electoral College Votes": 10,
-            "Election Result": "Democratic",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 6177224,
@@ -1796,7 +1796,7 @@
         "2016": {
             "State": "Maryland",
             "Electoral College Votes": 10,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 6016447,
@@ -1809,7 +1809,7 @@
         "2012": {
             "State": "Maryland",
             "Electoral College Votes": 10,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 5884563,
@@ -1822,7 +1822,7 @@
         "2008": {
             "State": "Maryland",
             "Electoral College Votes": 10,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 5633597,
@@ -1835,7 +1835,7 @@
         "2004": {
             "State": "Maryland",
             "Electoral College Votes": 10,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 5558058,
@@ -1863,7 +1863,7 @@
         "2024": {
             "State": "Massachusetts",
             "Electoral College Votes": 11,
-            "Election Result": "Democratic",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 7029917,
@@ -1889,7 +1889,7 @@
         "2016": {
             "State": "Massachusetts",
             "Electoral College Votes": 11,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 6811779,
@@ -1902,7 +1902,7 @@
         "2012": {
             "State": "Massachusetts",
             "Electoral College Votes": 11,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 6646144,
@@ -1915,7 +1915,7 @@
         "2008": {
             "State": "Massachusetts",
             "Electoral College Votes": 12,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 6497967,
@@ -1928,7 +1928,7 @@
         "2004": {
             "State": "Massachusetts",
             "Electoral College Votes": 12,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 6418262,
@@ -1956,7 +1956,7 @@
         "2024": {
             "State": "Michigan",
             "Electoral College Votes": 15,
-            "Election Result": "Democratic",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 10077331,
@@ -1982,7 +1982,7 @@
         "2016": {
             "State": "Michigan",
             "Electoral College Votes": 16,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 9928300,
@@ -1995,7 +1995,7 @@
         "2012": {
             "State": "Michigan",
             "Electoral College Votes": 16,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 9883360,
@@ -2008,7 +2008,7 @@
         "2008": {
             "State": "Michigan",
             "Electoral College Votes": 17,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 10003422,
@@ -2021,7 +2021,7 @@
         "2004": {
             "State": "Michigan",
             "Electoral College Votes": 17,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 10120860,
@@ -2049,7 +2049,7 @@
         "2024": {
             "State": "Minnesota",
             "Electoral College Votes": 10,
-            "Election Result": "Democratic",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 5706494,
@@ -2075,7 +2075,7 @@
         "2016": {
             "State": "Minnesota",
             "Electoral College Votes": 10,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 5519952,
@@ -2088,7 +2088,7 @@
         "2012": {
             "State": "Minnesota",
             "Electoral College Votes": 10,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 5379139,
@@ -2101,7 +2101,7 @@
         "2008": {
             "State": "Minnesota",
             "Electoral College Votes": 10,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 5220393,
@@ -2114,7 +2114,7 @@
         "2004": {
             "State": "Minnesota",
             "Electoral College Votes": 10,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 5100958,
@@ -2142,7 +2142,7 @@
         "2024": {
             "State": "Mississippi",
             "Electoral College Votes": 6,
-            "Election Result": "Republican",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 2961279,
@@ -2168,7 +2168,7 @@
         "2016": {
             "State": "Mississippi",
             "Electoral College Votes": 6,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 2988726,
@@ -2181,7 +2181,7 @@
         "2012": {
             "State": "Mississippi",
             "Electoral College Votes": 6,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 2984926,
@@ -2194,7 +2194,7 @@
         "2008": {
             "State": "Mississippi",
             "Electoral College Votes": 7,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 2938618,
@@ -2207,7 +2207,7 @@
         "2004": {
             "State": "Mississippi",
             "Electoral College Votes": 7,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 2897698,
@@ -2235,7 +2235,7 @@
         "2024": {
             "State": "Missouri",
             "Electoral College Votes": 10,
-            "Election Result": "Republican",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 6154913,
@@ -2261,7 +2261,7 @@
         "2016": {
             "State": "Missouri",
             "Electoral College Votes": 10,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 6093000,
@@ -2274,7 +2274,7 @@
         "2012": {
             "State": "Missouri",
             "Electoral College Votes": 10,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 6021988,
@@ -2287,7 +2287,7 @@
         "2008": {
             "State": "Missouri",
             "Electoral College Votes": 11,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 5911605,
@@ -2300,7 +2300,7 @@
         "2004": {
             "State": "Missouri",
             "Electoral College Votes": 11,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 5754618,
@@ -2328,7 +2328,7 @@
         "2024": {
             "State": "Montana",
             "Electoral College Votes": 4,
-            "Election Result": "Republican",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 1084225,
@@ -2354,7 +2354,7 @@
         "2016": {
             "State": "Montana",
             "Electoral College Votes": 3,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 1042520,
@@ -2367,7 +2367,7 @@
         "2012": {
             "State": "Montana",
             "Electoral College Votes": 3,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 1005141,
@@ -2380,7 +2380,7 @@
         "2008": {
             "State": "Montana",
             "Electoral College Votes": 3,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 967440,
@@ -2393,7 +2393,7 @@
         "2004": {
             "State": "Montana",
             "Electoral College Votes": 3,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 926738,
@@ -2421,7 +2421,7 @@
         "2024": {
             "State": "Nebraska",
             "Electoral College Votes": 5,
-            "Election Result": "Republican",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 1961504,
@@ -2447,7 +2447,7 @@
         "2016": {
             "State": "Nebraska",
             "Electoral College Votes": 5,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 1907603,
@@ -2460,7 +2460,7 @@
         "2012": {
             "State": "Nebraska",
             "Electoral College Votes": 5,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 1855525,
@@ -2473,7 +2473,7 @@
         "2008": {
             "State": "Nebraska",
             "Electoral College Votes": 5,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 1783432,
@@ -2486,7 +2486,7 @@
         "2004": {
             "State": "Nebraska",
             "Electoral College Votes": 5,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 1729180,
@@ -2514,7 +2514,7 @@
         "2024": {
             "State": "Nevada",
             "Electoral College Votes": 6,
-            "Election Result": "Democratic",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 3104614,
@@ -2540,7 +2540,7 @@
         "2016": {
             "State": "Nevada",
             "Electoral College Votes": 6,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 2940058,
@@ -2553,7 +2553,7 @@
         "2012": {
             "State": "Nevada",
             "Electoral College Votes": 6,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 2758931,
@@ -2566,7 +2566,7 @@
         "2008": {
             "State": "Nevada",
             "Electoral College Votes": 5,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 2600167,
@@ -2579,7 +2579,7 @@
         "2004": {
             "State": "Nevada",
             "Electoral College Votes": 5,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 2334771,
@@ -2607,7 +2607,7 @@
         "2024": {
             "State": "New Hampshire",
             "Electoral College Votes": 4,
-            "Election Result": "Democratic",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 1377529,
@@ -2633,7 +2633,7 @@
         "2016": {
             "State": "New Hampshire",
             "Electoral College Votes": 4,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 1334795,
@@ -2646,7 +2646,7 @@
         "2012": {
             "State": "New Hampshire",
             "Electoral College Votes": 4,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 1320718,
@@ -2659,7 +2659,7 @@
         "2008": {
             "State": "New Hampshire",
             "Electoral College Votes": 4,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 1315828,
@@ -2672,7 +2672,7 @@
         "2004": {
             "State": "New Hampshire",
             "Electoral College Votes": 4,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 1287687,
@@ -2700,7 +2700,7 @@
         "2024": {
             "State": "New Jersey",
             "Electoral College Votes": 14,
-            "Election Result": "Democratic",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 9288994,
@@ -2726,7 +2726,7 @@
         "2016": {
             "State": "New Jersey",
             "Electoral College Votes": 14,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 8944469,
@@ -2739,7 +2739,7 @@
         "2012": {
             "State": "New Jersey",
             "Electoral College Votes": 14,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 8864590,
@@ -2752,7 +2752,7 @@
         "2008": {
             "State": "New Jersey",
             "Electoral College Votes": 15,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 8682661,
@@ -2765,7 +2765,7 @@
         "2004": {
             "State": "New Jersey",
             "Electoral College Votes": 15,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 8698879,
@@ -2793,7 +2793,7 @@
         "2024": {
             "State": "New Mexico",
             "Electoral College Votes": 5,
-            "Election Result": "Democratic",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 2117522,
@@ -2819,7 +2819,7 @@
         "2016": {
             "State": "New Mexico",
             "Electoral College Votes": 5,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 2081015,
@@ -2832,7 +2832,7 @@
         "2012": {
             "State": "New Mexico",
             "Electoral College Votes": 5,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 2085538,
@@ -2845,7 +2845,7 @@
         "2008": {
             "State": "New Mexico",
             "Electoral College Votes": 5,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 1984356,
@@ -2858,7 +2858,7 @@
         "2004": {
             "State": "New Mexico",
             "Electoral College Votes": 5,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 1874614,
@@ -2886,7 +2886,7 @@
         "2024": {
             "State": "New York",
             "Electoral College Votes": 28,
-            "Election Result": "Democratic",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 19542209,
@@ -2912,7 +2912,7 @@
         "2016": {
             "State": "New York",
             "Electoral College Votes": 29,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 19745289,
@@ -2925,7 +2925,7 @@
         "2012": {
             "State": "New York",
             "Electoral College Votes": 29,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 19570261,
@@ -2938,7 +2938,7 @@
         "2008": {
             "State": "New York",
             "Electoral College Votes": 31,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 19490297,
@@ -2951,7 +2951,7 @@
         "2004": {
             "State": "New York",
             "Electoral College Votes": 31,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 19227088,
@@ -2979,7 +2979,7 @@
         "2024": {
             "State": "North Carolina",
             "Electoral College Votes": 16,
-            "Election Result": "Republican",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 10551162,
@@ -3005,7 +3005,7 @@
         "2016": {
             "State": "North Carolina",
             "Electoral College Votes": 15,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 10146788,
@@ -3018,7 +3018,7 @@
         "2012": {
             "State": "North Carolina",
             "Electoral College Votes": 15,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 9752073,
@@ -3031,7 +3031,7 @@
         "2008": {
             "State": "North Carolina",
             "Electoral College Votes": 15,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 9222414,
@@ -3044,7 +3044,7 @@
         "2004": {
             "State": "North Carolina",
             "Electoral College Votes": 15,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 8437320,
@@ -3072,7 +3072,7 @@
         "2024": {
             "State": "North Dakota",
             "Electoral College Votes": 3,
-            "Election Result": "Republican",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 779094,
@@ -3098,7 +3098,7 @@
         "2016": {
             "State": "North Dakota",
             "Electoral College Votes": 3,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 757952,
@@ -3111,7 +3111,7 @@
         "2012": {
             "State": "North Dakota",
             "Electoral College Votes": 3,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 699628,
@@ -3124,7 +3124,7 @@
         "2008": {
             "State": "North Dakota",
             "Electoral College Votes": 3,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 641481,
@@ -3137,7 +3137,7 @@
         "2004": {
             "State": "North Dakota",
             "Electoral College Votes": 3,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 634448,
@@ -3165,7 +3165,7 @@
         "2024": {
             "State": "Ohio",
             "Electoral College Votes": 17,
-            "Election Result": "Republican",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 11780017,
@@ -3191,7 +3191,7 @@
         "2016": {
             "State": "Ohio",
             "Electoral College Votes": 18,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 11614373,
@@ -3204,7 +3204,7 @@
         "2012": {
             "State": "Ohio",
             "Electoral College Votes": 18,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 11544225,
@@ -3217,7 +3217,7 @@
         "2008": {
             "State": "Ohio",
             "Electoral College Votes": 20,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 11485910,
@@ -3230,7 +3230,7 @@
         "2004": {
             "State": "Ohio",
             "Electoral College Votes": 20,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 11459011,
@@ -3258,7 +3258,7 @@
         "2024": {
             "State": "Oklahoma",
             "Electoral College Votes": 7,
-            "Election Result": "Republican",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 3986639,
@@ -3284,7 +3284,7 @@
         "2016": {
             "State": "Oklahoma",
             "Electoral College Votes": 7,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 3911338,
@@ -3297,7 +3297,7 @@
         "2012": {
             "State": "Oklahoma",
             "Electoral College Votes": 7,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 3814820,
@@ -3310,7 +3310,7 @@
         "2008": {
             "State": "Oklahoma",
             "Electoral College Votes": 8,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 3642361,
@@ -3323,7 +3323,7 @@
         "2004": {
             "State": "Oklahoma",
             "Electoral College Votes": 8,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 3523553,
@@ -3351,7 +3351,7 @@
         "2024": {
             "State": "Oregon",
             "Electoral College Votes": 8,
-            "Election Result": "Democratic",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 4268055,
@@ -3377,7 +3377,7 @@
         "2016": {
             "State": "Oregon",
             "Electoral College Votes": 7,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 4093465,
@@ -3390,7 +3390,7 @@
         "2012": {
             "State": "Oregon",
             "Electoral College Votes": 7,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 3899353,
@@ -3403,7 +3403,7 @@
         "2008": {
             "State": "Oregon",
             "Electoral College Votes": 7,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 3790060,
@@ -3416,7 +3416,7 @@
         "2004": {
             "State": "Oregon",
             "Electoral College Votes": 7,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 3591363,
@@ -3444,7 +3444,7 @@
         "2024": {
             "State": "Pennsylvania",
             "Electoral College Votes": 19,
-            "Election Result": "Democratic",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 12964056,
@@ -3470,7 +3470,7 @@
         "2016": {
             "State": "Pennsylvania",
             "Electoral College Votes": 20,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 12784227,
@@ -3483,7 +3483,7 @@
         "2012": {
             "State": "Pennsylvania",
             "Electoral College Votes": 20,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 12763536,
@@ -3496,7 +3496,7 @@
         "2008": {
             "State": "Pennsylvania",
             "Electoral College Votes": 21,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 12448279,
@@ -3509,7 +3509,7 @@
         "2004": {
             "State": "Pennsylvania",
             "Electoral College Votes": 21,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 12406292,
@@ -3537,7 +3537,7 @@
         "2024": {
             "State": "Rhode Island",
             "Electoral College Votes": 4,
-            "Election Result": "Democratic",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 1097379,
@@ -3563,7 +3563,7 @@
         "2016": {
             "State": "Rhode Island",
             "Electoral College Votes": 4,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 1056426,
@@ -3576,7 +3576,7 @@
         "2012": {
             "State": "Rhode Island",
             "Electoral College Votes": 4,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 1050292,
@@ -3589,7 +3589,7 @@
         "2008": {
             "State": "Rhode Island",
             "Electoral College Votes": 4,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 1053209,
@@ -3602,7 +3602,7 @@
         "2004": {
             "State": "Rhode Island",
             "Electoral College Votes": 4,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 1080632,
@@ -3630,7 +3630,7 @@
         "2024": {
             "State": "South Carolina",
             "Electoral College Votes": 9,
-            "Election Result": "Republican",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 5282634,
@@ -3656,7 +3656,7 @@
         "2016": {
             "State": "South Carolina",
             "Electoral College Votes": 9,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 4961119,
@@ -3669,7 +3669,7 @@
         "2012": {
             "State": "South Carolina",
             "Electoral College Votes": 9,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 4723723,
@@ -3682,7 +3682,7 @@
         "2008": {
             "State": "South Carolina",
             "Electoral College Votes": 8,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 4479800,
@@ -3695,7 +3695,7 @@
         "2004": {
             "State": "South Carolina",
             "Electoral College Votes": 8,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 4176298,
@@ -3723,7 +3723,7 @@
         "2024": {
             "State": "South Dakota",
             "Electoral College Votes": 3,
-            "Election Result": "Republican",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 909824,
@@ -3749,7 +3749,7 @@
         "2016": {
             "State": "South Dakota",
             "Electoral College Votes": 3,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 865454,
@@ -3762,7 +3762,7 @@
         "2012": {
             "State": "South Dakota",
             "Electoral College Votes": 3,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 833354,
@@ -3775,7 +3775,7 @@
         "2008": {
             "State": "South Dakota",
             "Electoral College Votes": 3,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 804194,
@@ -3788,7 +3788,7 @@
         "2004": {
             "State": "South Dakota",
             "Electoral College Votes": 3,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 764309,
@@ -3816,7 +3816,7 @@
         "2024": {
             "State": "Tennessee",
             "Electoral College Votes": 11,
-            "Election Result": "Republican",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 6944260,
@@ -3842,7 +3842,7 @@
         "2016": {
             "State": "Tennessee",
             "Electoral College Votes": 11,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 6651194,
@@ -3855,7 +3855,7 @@
         "2012": {
             "State": "Tennessee",
             "Electoral College Votes": 11,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 6451365,
@@ -3868,7 +3868,7 @@
         "2008": {
             "State": "Tennessee",
             "Electoral College Votes": 11,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 6214888,
@@ -3881,7 +3881,7 @@
         "2004": {
             "State": "Tennessee",
             "Electoral College Votes": 11,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 5915706,
@@ -3909,7 +3909,7 @@
         "2024": {
             "State": "Texas",
             "Electoral College Votes": 40,
-            "Election Result": "Republican",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 29360759,
@@ -3935,7 +3935,7 @@
         "2016": {
             "State": "Texas",
             "Electoral College Votes": 38,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 27862596,
@@ -3948,7 +3948,7 @@
         "2012": {
             "State": "Texas",
             "Electoral College Votes": 38,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 26059203,
@@ -3961,7 +3961,7 @@
         "2008": {
             "State": "Texas",
             "Electoral College Votes": 32,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 24326974,
@@ -3974,7 +3974,7 @@
         "2004": {
             "State": "Texas",
             "Electoral College Votes": 32,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 22490022,
@@ -4002,7 +4002,7 @@
         "2024": {
             "State": "Utah",
             "Electoral College Votes": 6,
-            "Election Result": "Republican",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 3337975,
@@ -4028,7 +4028,7 @@
         "2016": {
             "State": "Utah",
             "Electoral College Votes": 6,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 3051217,
@@ -4041,7 +4041,7 @@
         "2012": {
             "State": "Utah",
             "Electoral College Votes": 6,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 2855287,
@@ -4054,7 +4054,7 @@
         "2008": {
             "State": "Utah",
             "Electoral College Votes": 5,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 2736424,
@@ -4067,7 +4067,7 @@
         "2004": {
             "State": "Utah",
             "Electoral College Votes": 5,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 2351467,
@@ -4095,7 +4095,7 @@
         "2024": {
             "State": "Vermont",
             "Electoral College Votes": 3,
-            "Election Result": "Democratic",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 643077,
@@ -4121,7 +4121,7 @@
         "2016": {
             "State": "Vermont",
             "Electoral College Votes": 3,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 624594,
@@ -4134,7 +4134,7 @@
         "2012": {
             "State": "Vermont",
             "Electoral College Votes": 3,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 626011,
@@ -4147,7 +4147,7 @@
         "2008": {
             "State": "Vermont",
             "Electoral College Votes": 3,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 621270,
@@ -4160,7 +4160,7 @@
         "2004": {
             "State": "Vermont",
             "Electoral College Votes": 3,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 619132,
@@ -4188,7 +4188,7 @@
         "2024": {
             "State": "Virginia",
             "Electoral College Votes": 13,
-            "Election Result": "Democratic",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 8654542,
@@ -4214,7 +4214,7 @@
         "2016": {
             "State": "Virginia",
             "Electoral College Votes": 13,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 8411808,
@@ -4227,7 +4227,7 @@
         "2012": {
             "State": "Virginia",
             "Electoral College Votes": 13,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 8185867,
@@ -4240,7 +4240,7 @@
         "2008": {
             "State": "Virginia",
             "Electoral College Votes": 13,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 7769089,
@@ -4253,7 +4253,7 @@
         "2004": {
             "State": "Virginia",
             "Electoral College Votes": 13,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 7414028,
@@ -4281,7 +4281,7 @@
         "2024": {
             "State": "Washington",
             "Electoral College Votes": 12,
-            "Election Result": "Democratic",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 7796941,
@@ -4307,7 +4307,7 @@
         "2016": {
             "State": "Washington",
             "Electoral College Votes": 12,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 7288000,
@@ -4320,7 +4320,7 @@
         "2012": {
             "State": "Washington",
             "Electoral College Votes": 12,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 6897012,
@@ -4333,7 +4333,7 @@
         "2008": {
             "State": "Washington",
             "Electoral College Votes": 11,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 6549224,
@@ -4346,7 +4346,7 @@
         "2004": {
             "State": "Washington",
             "Electoral College Votes": 11,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 6203788,
@@ -4374,7 +4374,7 @@
         "2024": {
             "State": "West Virginia",
             "Electoral College Votes": 4,
-            "Election Result": "Republican",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 1793716,
@@ -4400,7 +4400,7 @@
         "2016": {
             "State": "West Virginia",
             "Electoral College Votes": 5,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 1831102,
@@ -4413,7 +4413,7 @@
         "2012": {
             "State": "West Virginia",
             "Electoral College Votes": 5,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 1855364,
@@ -4426,7 +4426,7 @@
         "2008": {
             "State": "West Virginia",
             "Electoral College Votes": 5,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 1814468,
@@ -4439,7 +4439,7 @@
         "2004": {
             "State": "West Virginia",
             "Electoral College Votes": 5,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 1810354,
@@ -4467,7 +4467,7 @@
         "2024": {
             "State": "Wisconsin",
             "Electoral College Votes": 10,
-            "Election Result": "Democratic",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 5893718,
@@ -4493,7 +4493,7 @@
         "2016": {
             "State": "Wisconsin",
             "Electoral College Votes": 10,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 5778708,
@@ -4506,7 +4506,7 @@
         "2012": {
             "State": "Wisconsin",
             "Electoral College Votes": 10,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 5726398,
@@ -4519,7 +4519,7 @@
         "2008": {
             "State": "Wisconsin",
             "Electoral College Votes": 10,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 5627967,
@@ -4532,7 +4532,7 @@
         "2004": {
             "State": "Wisconsin",
             "Electoral College Votes": 10,
-            "Election Result": "Democratic",
+            "Election Result": "D",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 5532955,
@@ -4560,7 +4560,7 @@
         "2024": {
             "State": "Wyoming",
             "Electoral College Votes": 3,
-            "Election Result": "Republican",
+            "Election Result": "",
             "Nationwide Inflation (%)": 2.6,
             "In Recession (Y/N)": "N",
             "Population": 576851,
@@ -4586,7 +4586,7 @@
         "2016": {
             "State": "Wyoming",
             "Electoral College Votes": 3,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 1.3,
             "In Recession (Y/N)": "No",
             "Population": 585501,
@@ -4599,7 +4599,7 @@
         "2012": {
             "State": "Wyoming",
             "Electoral College Votes": 3,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.1,
             "In Recession (Y/N)": "No",
             "Population": 576412,
@@ -4612,7 +4612,7 @@
         "2008": {
             "State": "Wyoming",
             "Electoral College Votes": 3,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 3.8,
             "In Recession (Y/N)": "Yes",
             "Population": 532668,
@@ -4625,7 +4625,7 @@
         "2004": {
             "State": "Wyoming",
             "Electoral College Votes": 3,
-            "Election Result": "Republican",
+            "Election Result": "R",
             "Nationwide Inflation (%)": 2.7,
             "In Recession (Y/N)": "No",
             "Population": 509293,
