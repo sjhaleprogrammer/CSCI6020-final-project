@@ -1,14 +1,35 @@
-project/
-│
+project_root/
 ├── data_raw/
 │   └── raw_data.xlsx
-│
-├── datasets/
+├── data_processed/
 │   └── all_states/
-│       └── all_states.csv
-│
+│       ├── all_states.csv
+│       ├── all_states_training.csv
+│       ├── all_states_validation.csv
+│       └── all_states_prediction.csv
+├── frontend/
+│   ├── index.html
+│   ├── styles.css
+│   ├── app.js
+│   └── README.md
+├── python/
+│   ├── preprocessing.py
+│   ├── modeling.py
+│   ├── requirements.txt
+│   └── README.md
 ├── jupyter/
-│   └── your_notebooks.ipynb
-│
-├── README.md
-└── ...
+│   ├── processing_notebook.ipynb
+│   ├── modeling_notebook.ipynb
+│   └── README.md
+├── results/
+│   ├── model_comparisons.csv
+│   ├── visualizations/
+│   │   ├── roc_curve.png
+│   │   ├── confusion_matrix.png
+│   │   └── feature_importance.png
+│   └── final_report.pdf
+├── docs/
+│   ├── proposal.pdf
+│   ├── project_plan.pdf
+│   └── presentation_slides.pptx
+└── README.md
