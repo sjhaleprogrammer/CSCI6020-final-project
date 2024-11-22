@@ -1,25 +1,34 @@
 project_root/
-├── data_raw/
-│   └── raw_data.xlsx
+├── archive/
 ├── data_processed/
 │   └── all_states/
 │       ├── all_states.csv
 │       ├── all_states_training.csv
 │       ├── all_states_validation.csv
 │       └── all_states_prediction.csv
+├── data_raw/
+│   └── raw_data.xlsx
+├── docs/
+│   ├── proposal.pdf
+│   ├── project_plan.pdf
+│   └── presentation_slides.pptx
 ├── frontend/
 │   ├── index.html
 │   ├── styles.css
 │   ├── app.js
 │   └── README.md
-├── python/
-│   ├── preprocessing.py
-│   ├── modeling.py
-│   ├── requirements.txt
-│   └── README.md
 ├── jupyter/
 │   ├── processing_notebook.ipynb
 │   ├── modeling_notebook.ipynb
+│   ├── testing_notebook.ipynb
+│   └── README.md
+├── models/                 
+│   └── logistic_regression_model.joblib
+├── python/
+│   ├── 
+│   ├── modeling.py
+│   ├── inference.py       
+│   ├── requirements.txt
 │   └── README.md
 ├── results/
 │   ├── model_comparisons.csv
@@ -28,8 +37,5 @@ project_root/
 │   │   ├── confusion_matrix.png
 │   │   └── feature_importance.png
 │   └── final_report.pdf
-├── docs/
-│   ├── proposal.pdf
-│   ├── project_plan.pdf
-│   └── presentation_slides.pptx
 └── README.md
+
