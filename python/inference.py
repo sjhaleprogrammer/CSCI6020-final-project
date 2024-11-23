@@ -2,9 +2,8 @@ import os
 import pandas as pd
 from joblib import load
 
-# Paths
-model_path = '../models/logistic_regression/logistic_regression_model.joblib'
-preprocessor_path = '../models/logistic_regression/preprocessor.joblib'
+# Base paths
+models_base_path = '../models/'
 dataset_path = '../data_processed/all_states/all_states_prediction.csv'
 
 # Required Features
@@ -15,14 +14,24 @@ required_features = [
     '% Without Healthcare Coverage', 'Year'
 ]
 
-def load_model_and_preprocessor():
+def load_model_and_preprocessor(model_name):
     """
-    Load the trained model and preprocessor from their respective paths.
+    Load the trained model and preprocessor for the specified model.
+    
+    Args:
+        model_name (str): The name of the model folder (e.g., "logistic_regression").
+    
+    Returns:
+        model, preprocessor: Loaded model and preprocessor.
     """
+    model_path = os.path.join(models_base_path, model_name, f"{model_name}_model.joblib")
+    preprocessor_path = os.path.join(models_base_path, model_name, "preprocessor.joblib")
+    
     if not os.path.exists(model_path):
         raise FileNotFoundError(f"Model file not found at {model_path}")
     if not os.path.exists(preprocessor_path):
         raise FileNotFoundError(f"Preprocessor file not found at {preprocessor_path}")
+    
     model = load(model_path)
     preprocessor = load(preprocessor_path)
     return model, preprocessor
@@ -48,11 +57,12 @@ def get_state_data(state, year, dataset_path=dataset_path):
         raise ValueError(f"No data found for state: {state} in year: {year}")
     return row.iloc[0].to_dict()
 
-def predict_election_from_state(state, year=2024):
+def predict_election_from_state(model_name, state, year=2024):
     """
-    Predict the election result for a given state and year.
+    Predict the election result for a given state and year using the specified model.
     
     Args:
+        model_name (str): The name of the model to use (e.g., "logistic_regression").
         state (str): The state name.
         year (int): The election year.
     
@@ -60,7 +70,7 @@ def predict_election_from_state(state, year=2024):
         str: Predicted result ('Republican' or 'Democratic').
     """
     state_data = get_state_data(state, year)
-    model, preprocessor = load_model_and_preprocessor()
+    model, preprocessor = load_model_and_preprocessor(model_name)
     
     # Extract features for prediction
     input_data = {feature: state_data[feature] for feature in required_features}
@@ -72,11 +82,3 @@ def predict_election_from_state(state, year=2024):
     
     return 'Republican' if prediction[0] == 0 else 'Democratic'
 
-# Example usage
-if __name__ == "__main__":
-    try:
-        state = "California"
-        result = predict_election_from_state(state)
-        print(f"Predicted election result for {state}: {result}")
-    except Exception as e:
-        print(f"Error: {e}")
