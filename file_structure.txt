@@ -13,9 +13,10 @@ project_root/
 │   ├── project_plan.pdf
 │   └── presentation_slides.pptx
 ├── frontend/
-│   ├── index.html
+├── ├── templates/
+│   │  	└── index.html
 │   ├── styles.css
-│   ├── app.js
+│   ├── app.py
 │   └── README.md
 ├── jupyter/
 │   ├── processing_notebook.ipynb
@@ -28,7 +29,6 @@ project_root/
 │   ├── 
 │   ├── modeling.py
 │   ├── inference.py       
-│   ├── requirements.txt
 │   └── README.md
 ├── results/
 │   ├── model_comparisons.csv
@@ -37,5 +37,8 @@ project_root/
 │   │   ├── confusion_matrix.png
 │   │   └── feature_importance.png
 │   └── final_report.pdf
-└── README.md
+├── README.md
+├── requirements.txt
+└── .gitignore
+
 

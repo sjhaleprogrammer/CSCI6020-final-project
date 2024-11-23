@@ -1,0 +1,8 @@
+Flask
+Jinja2
+markupsafe
+Werkzeug
+joblib
+pandas
+numpy
+scikit-learn
