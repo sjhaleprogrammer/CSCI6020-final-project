@@ -1,13 +1,68 @@
 <!DOCTYPE html>
-
-<html>
-
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Election Prediction</title>
+</head>
 <body>
-     
+    <h1>Election Prediction</h1>
 
-	{{output}}
+    <!-- Form for input -->
+    <form id="predict-form">
+        <label for="model-name">Model Name:</label>
+        <input type="text" id="model-name" name="model_name" required>
+        <br>
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required>
+        <br>
+        <label for="year">Year (default: 2024):</label>
+        <input type="number" id="year" name="year" value="2024">
+        <br>
+        <button type="submit">Predict</button>
+    </form>
 
+    <!-- Section to display the prediction result -->
+    <div id="output">
+        <h2>Prediction Result:</h2>
+        <p id="result">Submit the form to see the result.</p>
+    </div>
 
+    <!-- JavaScript to handle form submission and display the result -->
+    <script>
+        document.getElementById('predict-form').addEventListener('submit', async (event) => {
+            event.preventDefault(); // Prevent the form from refreshing the page
+
+            const model_name = document.getElementById('model-name').value;
+            const state = document.getElementById('state').value;
+            const year = document.getElementById('year').value || 2024;
+
+            try {
+                const response = await fetch('/predict', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ model_name, state, year }),
+                });
+
+                if (!response.ok) {
+                    throw new Error(`Error: ${response.status} - ${response.statusText}`);
+                }
+
+                const data = await response.json();
+
+                if (data.error) {
+                    document.getElementById('result').innerText = `Error: ${data.error}`;
+                } else {
+                    document.getElementById('result').innerText = 
+                        `For ${data.state} in ${data.year}, the predicted result is ${data.predicted_result}.`;
+                }
+            } catch (error) {
+                document.getElementById('result').innerText = `Error: ${error.message}`;
+            }
+        });
+    </script>
 </body>
 </html>
+
