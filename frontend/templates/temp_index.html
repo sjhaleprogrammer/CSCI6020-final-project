@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Election Prediction</title>
+</head>
+<body>
+    <h1>Election Prediction</h1>
+    <form id="predictionForm">
+        <label for="model">Model Name:</label>
+        <input type="text" id="model" name="model_name" placeholder="e.g., logistic_regression" required><br>
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" placeholder="e.g., California" required><br>
+
+        <label for="year">Year:</label>
+        <input type="number" id="year" name="year" placeholder="e.g., 2024" required><br>
+
+        <button type="button" onclick="submitPrediction()">Submit</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+        async function submitPrediction() {
+            const formData = new FormData(document.getElementById('predictionForm'));
+            const data = {
+                model_name: formData.get('model_name'),
+                state: formData.get('state'),
+                year: parseInt(formData.get('year'), 10)
+            };
+
+            const response = await fetch('/predict', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            });
+
+            const resultDiv = document.getElementById('result');
+            if (response.ok) {
+                const result = await response.json();
+                resultDiv.innerHTML = `
+                    <h2>Prediction Result</h2>
+                    <p>State: ${result.state}</p>
+                    <p>Year: ${result.year}</p>
+                    <p>Model: ${result.model}</p>
+                    <p>Predicted Result: ${result.predicted_result}</p>
+                `;
+            } else {
+                const error = await response.json();
+                resultDiv.innerHTML = `<p>Error: ${error.error}</p>`;
+            }
+        }
+    </script>
+</body>
+</html>
