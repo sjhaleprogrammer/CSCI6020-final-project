@@ -1,5 +1,7 @@
 import os
 import pandas as pd
+import torch
+import torch.nn as nn
 from joblib import load
 
 # Base paths
@@ -14,6 +16,21 @@ required_features = [
     '% Without Healthcare Coverage', 'Year'
 ]
 
+# Define the neural network
+class ElectionPredictor(nn.Module):
+    def __init__(self, input_size):
+        super(ElectionPredictor, self).__init__()
+        self.fc1 = nn.Linear(input_size, 32)  # First hidden layer with 32 neurons
+        self.fc2 = nn.Linear(32, 16)         # Second hidden layer with 16 neurons
+        self.fc3 = nn.Linear(16, 1)          # Output layer
+        self.sigmoid = nn.Sigmoid()
+
+    def forward(self, x):
+        x = torch.relu(self.fc1(x))
+        x = torch.relu(self.fc2(x))
+        x = self.fc3(x)
+        return self.sigmoid(x)
+
 def load_model_and_preprocessor(model_name):
     """
     Load the trained model and preprocessor for the specified model.
@@ -24,16 +41,34 @@ def load_model_and_preprocessor(model_name):
     Returns:
         model, preprocessor: Loaded model and preprocessor.
     """
-    model_path = os.path.join(models_base_path, model_name, f"{model_name}_model.joblib")
-    preprocessor_path = os.path.join(models_base_path, model_name, "preprocessor.joblib")
+    model_folder_path = os.path.join(models_base_path, model_name)
+    preprocessor_path = os.path.join(model_folder_path, "preprocessor.joblib")
+    
+    # Handle different file extensions for models
+    if model_name == "neural_network":
+        model_path = os.path.join(model_folder_path, f"{model_name}_model.pth")
+    else:
+        model_path = os.path.join(model_folder_path, f"{model_name}_model.joblib")
     
     if not os.path.exists(model_path):
         raise FileNotFoundError(f"Model file not found at {model_path}")
     if not os.path.exists(preprocessor_path):
         raise FileNotFoundError(f"Preprocessor file not found at {preprocessor_path}")
     
-    model = load(model_path)
+    # Load the preprocessor
     preprocessor = load(preprocessor_path)
+    
+    # Load the model
+    if model_name == "neural_network":
+        input_size = len(preprocessor.transformers_[0][2]) + len(
+            preprocessor.transformers_[1][1].get_feature_names_out()
+        )
+        model = ElectionPredictor(input_size)  # Initialize the neural network structure
+        model.load_state_dict(torch.load(model_path))  # Load trained weights
+        model.eval()  # Set the model to evaluation mode
+    else:
+        model = load(model_path)
+    
     return model, preprocessor
 
 def get_state_data(state, year, dataset_path=dataset_path):
@@ -78,7 +113,11 @@ def predict_election_from_state(model_name, state, year=2024):
     
     # Preprocess and predict
     X_transformed = preprocessor.transform(input_df)
-    prediction = model.predict(X_transformed)
-    
-    return 'Republican' if prediction[0] == 0 else 'Democratic'
-
+    if model_name == "neural_network":
+        X_tensor = torch.tensor(X_transformed, dtype=torch.float32)
+        with torch.no_grad():
+            prediction = model(X_tensor).item()
+        return 'Democratic' if prediction > 0.5 else 'Republican'
+    else:
+        prediction = model.predict(X_transformed)
+        return 'Democratic' if prediction[0] == 1 else 'Republican'
