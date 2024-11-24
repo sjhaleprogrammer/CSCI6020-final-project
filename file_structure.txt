@@ -12,6 +12,14 @@ project_root/
 │   ├── proposal.pdf
 │   ├── project_plan.pdf
 │   └── presentation_slides.pptx
+├── environments/
+│   ├── ml/                                  # Machine Learning Conda environments
+│   │   ├── pytorch_env.yml                  # Conda env for PyTorch
+│   │   ├── tensorflow_env.yml               # Conda env for TensorFlow (if needed)
+│   │   └── data_science_env.yml               # Shared ML Conda env for lightweight tasks
+│   ├── app/                                 # Application-specific environment files
+│   │   └── requirements.txt                 # Lightweight production dependencies
+│   └── README.md                            # Documentation on environments
 ├── frontend/
 ├── ├── templates/
 │   │  	└── index.html
