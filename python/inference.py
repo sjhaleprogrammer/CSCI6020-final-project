@@ -1,12 +1,16 @@
 import os
+import json
 import pandas as pd
 import torch
 import torch.nn as nn
 from joblib import load
 
-# Base paths
-models_base_path = '../models/'
-dataset_path = '../data_processed/all_states/all_states_prediction.csv'
+# Calculate the absolute base directory of the project
+base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "../"))
+
+# Update paths to be absolute
+models_base_path = os.path.join(base_dir, "models/")
+dataset_path = os.path.join(base_dir, "data_processed/all_states/all_states_prediction.csv")
 
 # Required Features
 required_features = [
@@ -92,9 +96,29 @@ def get_state_data(state, year, dataset_path=dataset_path):
         raise ValueError(f"No data found for state: {state} in year: {year}")
     return row.iloc[0].to_dict()
 
-def predict_election_from_state(model_name, state, year=2024):
+def load_metrics(model_name):
     """
-    Predict the election result for a given state and year using the specified model.
+    Load the evaluation metrics for the specified model.
+    
+    Args:
+        model_name (str): The name of the model folder (e.g., "logistic_regression").
+    
+    Returns:
+        dict: A dictionary containing the model's metrics.
+    """
+    metrics_path = os.path.join(models_base_path, model_name, "metrics.json")
+    if not os.path.exists(metrics_path):
+        raise FileNotFoundError(f"Metrics file not found at {metrics_path}")
+    
+    with open(metrics_path, "r") as f:
+        metrics = json.load(f)
+    
+    return metrics
+
+def predict_election_from_state_with_metrics(model_name, state, year=2024):
+    """
+    Predict the election result for a given state and year using the specified model,
+    and return the prediction along with evaluation metrics.
     
     Args:
         model_name (str): The name of the model to use (e.g., "logistic_regression").
@@ -102,10 +126,11 @@ def predict_election_from_state(model_name, state, year=2024):
         year (int): The election year.
     
     Returns:
-        str: Predicted result ('Republican' or 'Democratic').
+        dict: A dictionary containing the predicted result and model metrics.
     """
     state_data = get_state_data(state, year)
     model, preprocessor = load_model_and_preprocessor(model_name)
+    metrics = load_metrics(model_name)
     
     # Extract features for prediction
     input_data = {feature: state_data[feature] for feature in required_features}
@@ -117,7 +142,69 @@ def predict_election_from_state(model_name, state, year=2024):
         X_tensor = torch.tensor(X_transformed, dtype=torch.float32)
         with torch.no_grad():
             prediction = model(X_tensor).item()
-        return 'Democratic' if prediction > 0.5 else 'Republican'
+        predicted_result = 'Democratic' if prediction > 0.5 else 'Republican'
     else:
         prediction = model.predict(X_transformed)
-        return 'Democratic' if prediction[0] == 1 else 'Republican'
+        predicted_result = 'Democratic' if prediction[0] == 1 else 'Republican'
+    
+    # Combine prediction with metrics
+    return {
+        "state": state,
+        "year": year,
+        "model": model_name,
+        "predicted_result": predicted_result,
+        "metrics": metrics
+    }
+
+def predict_election_for_all_states(model_name, year=2024):
+    """
+    Predict election results for all states for a given year using the specified model.
+
+    Args:
+        model_name (str): The name of the model to use (e.g., "logistic_regression").
+        year (int): The election year.
+
+    Returns:
+        dict: A dictionary with state names as keys and prediction results as values.
+    """
+    # Load model and preprocessor
+    model, preprocessor = load_model_and_preprocessor(model_name)
+
+    # Load the dataset
+    if not os.path.exists(dataset_path):
+        raise FileNotFoundError(f"Dataset file not found at {dataset_path}")
+    data = pd.read_csv(dataset_path)
+
+    # Get unique states
+    all_states = data['State'].unique()
+    predictions = {}
+
+    # Loop through each state
+    for state in all_states:
+        try:
+            # Get state data
+            state_data = get_state_data(state, year)
+            input_data = {feature: state_data[feature] for feature in required_features}
+            input_df = pd.DataFrame([input_data])
+
+            # Preprocess data
+            X_transformed = preprocessor.transform(input_df)
+
+            # Predict
+            if model_name == "neural_network":
+                X_tensor = torch.tensor(X_transformed, dtype=torch.float32)
+                with torch.no_grad():
+                    prediction = model(X_tensor).item()
+                predicted_result = "Democratic" if prediction > 0.5 else "Republican"
+            else:
+                prediction = model.predict(X_transformed)
+                predicted_result = "Democratic" if prediction[0] == 1 else "Republican"
+
+            # Store result
+            predictions[state] = {"predicted_result": predicted_result}
+
+        except Exception as e:
+            # Handle errors for individual states
+            predictions[state] = {"error": str(e)}
+
+    return predictions

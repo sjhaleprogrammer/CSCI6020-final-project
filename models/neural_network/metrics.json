@@ -1,0 +1,30 @@
+{
+    "accuracy": 0.8125,
+    "classification_report": {
+        "Republican": {
+            "precision": 0.7857142857142857,
+            "recall": 0.88,
+            "f1-score": 0.8301886792452831,
+            "support": 25.0
+        },
+        "Democrat": {
+            "precision": 0.85,
+            "recall": 0.7391304347826086,
+            "f1-score": 0.7906976744186046,
+            "support": 23.0
+        },
+        "accuracy": 0.8125,
+        "macro avg": {
+            "precision": 0.8178571428571428,
+            "recall": 0.8095652173913044,
+            "f1-score": 0.8104431768319438,
+            "support": 48.0
+        },
+        "weighted avg": {
+            "precision": 0.8165178571428572,
+            "recall": 0.8125,
+            "f1-score": 0.8112659060991664,
+            "support": 48.0
+        }
+    }
+}
