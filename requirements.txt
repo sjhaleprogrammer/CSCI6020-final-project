@@ -7,4 +7,4 @@ pandas
 numpy
 requests
 scikit-learn==1.5.1
-
+torch
