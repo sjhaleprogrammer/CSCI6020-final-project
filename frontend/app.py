@@ -1,80 +1,39 @@
 from flask import Flask, render_template, jsonify, request
 import sys
 import os
-import sklearn
+import pandas as pd
+import torch
 
-
-
-# Add the project root directory to sys.path
+# Add the parent directory of 'python/' to sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../')))
-
-from python.inference import *
-
+from python.inference import predict_election_from_state_with_metrics, predict_election_for_all_states
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html') 
-
+    return render_template('index.html')  
 
 @app.route('/predict', methods=['POST'])
 def predict_election():
     """
-    Predict the election result for a given state and year using the specified model.
+    Predict the election result for a single state and year using the specified model.
     """
     try:
         # Parse input JSON
         data = request.json
         model_name = data.get('model_name')
         state = data.get('state')
-        year = data.get('year',2024)
-        
+        year = data.get('year', 2024)
+
         if not model_name or not state:
             return jsonify({"error": "model_name and state are required"}), 400
-            
-            
-        
-        dataset_path = 'data_processed/all_states/all_states_prediction.csv'   
-            
-        model_path = os.path.join("models/", model_name, f"{model_name}_model.joblib")
-        preprocessor_path = os.path.join("models/", model_name, "preprocessor.joblib")
-        
-        if not os.path.exists(model_path):
-            raise FileNotFoundError(f"Model file not found at {model_path}")
-        if not os.path.exists(preprocessor_path):
-            raise FileNotFoundError(f"Preprocessor file not found at {preprocessor_path}")
-        
-        model = load(model_path)
-        preprocessor = load(preprocessor_path)
-       
 
-        if not os.path.exists(dataset_path):
-            raise FileNotFoundError(f"Dataset file not found at {dataset_path}")
-    
-        data = pd.read_csv(dataset_path)
-        row = data[(data['State'].str.lower() == state.lower()) & (data['Year'] == year)]
-        
-        if row.empty:
-            raise ValueError(f"No data found for state: {state} in year: {year}")
-        state_data = row.iloc[0].to_dict()
-        
-        # Extract features for prediction
-        input_data = {feature: state_data[feature] for feature in required_features}
-        input_df = pd.DataFrame([input_data])
-        
-        # Preprocess and predict
-        X_transformed = preprocessor.transform(input_df)
-        prediction = model.predict(X_transformed)
-        
-        result = 'Republican' if prediction[0] == 0 else 'Democratic'
-        
-        
-        return jsonify({
-            "state": state,
-            "year": year,
-            "predicted_result": result
-        })
+        # Call the core prediction function from inference.py
+        result = predict_election_from_state_with_metrics(model_name, state, year)
+
+        return jsonify(result)
+
     except FileNotFoundError as e:
         return jsonify({"error": str(e)}), 404
     except ValueError as e:
@@ -82,5 +41,30 @@ def predict_election():
     except Exception as e:
         return jsonify({"error": f"Internal server error: {str(e)}"}), 500
 
+@app.route('/predict_all', methods=['POST'])
+def predict_all_states():
+    """
+    Predict election results for all states for a given year using the specified model.
+    """
+    try:
+        # Parse input JSON
+        data = request.json
+        model_name = data.get('model_name')
+        year = data.get('year', 2024)
 
+        if not model_name:
+            return jsonify({"error": "model_name is required"}), 400
+
+        # Call the core function to predict all states
+        results = predict_election_for_all_states(model_name, year)
+
+        return jsonify(results)
+
+    except FileNotFoundError as e:
+        return jsonify({"error": str(e)}), 404
+    except Exception as e:
+        return jsonify({"error": f"Internal server error: {str(e)}"}), 500
+
+if __name__ == '__main__':
+    app.run(debug=True)
 
