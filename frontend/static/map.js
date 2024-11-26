@@ -14,7 +14,7 @@ var ClickableMap = {};
       return document.querySelector(query);
     },
     stateIdToDomClass: function (stateId) {
-      return `state-${stateId}`;
+      return classPrefix + "state-" + stateId.toLowerCase();
     },
   };
 
