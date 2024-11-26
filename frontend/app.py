@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify, request
+from flask import Flask, render_template, jsonify, request, redirect, url_for
 import sys
 import os
 import pandas as pd
@@ -20,7 +20,6 @@ def predict_election():
     Predict the election result for a single state and year using the specified model.
     """
     try:
-        # Parse input JSON
         data = request.json
         model_name = data.get('model_name')
         state = data.get('state')
@@ -28,6 +27,10 @@ def predict_election():
 
         if not model_name or not state:
             return jsonify({"error": "model_name and state are required"}), 400
+
+        if state == "All States":
+            # Redirect to /predict_all route
+            return redirect(url_for('predict_all_states'), code=307)  # Preserves POST method
 
         # Call the core prediction function from inference.py
         result = predict_election_from_state_with_metrics(model_name, state, year)
@@ -40,7 +43,7 @@ def predict_election():
         return jsonify({"error": str(e)}), 400
     except Exception as e:
         return jsonify({"error": f"Internal server error: {str(e)}"}), 500
-
+    
 @app.route('/predict_all', methods=['POST'])
 def predict_all_states():
     """

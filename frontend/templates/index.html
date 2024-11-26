@@ -4,28 +4,178 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Election Prediction</title>
-    
 </head>
-
-
-
 <body>
     <h1>Election Prediction</h1>
     <form id="predictionForm">
+        <!-- Model Dropdown -->
         <label for="model">Model Name:</label>
-        <input type="text" id="model" name="model_name" placeholder="e.g., logistic_regression" required><br>
+        <select id="model" name="model_name" required>
+            <option value="" disabled selected>Select a model</option>
+            <option value="decision_tree">Decision Tree</option>
+            <option value="k_nearest_neighbors">K Nearest Neighbors</option>
+            <option value="logistic_regression">Logistic Regression</option>
+            <option value="neural_network">Neural Network</option>
+            <option value="random_forest">Random Forest</option>
+        </select><br>
 
+        <!-- State Dropdown -->
         <label for="state">State:</label>
-        <input type="text" id="state" name="state" placeholder="e.g., California" required><br>
-
-        <label for="year">Year:</label>
-        <input type="number" id="year" name="year" placeholder="e.g., 2024" required><br>
-
+        <select id="state" name="state" required>
+            <option value="All States">All States</option>
+            <option value="Alabama">Alabama</option>
+            <option value="Alaska">Alaska</option>
+            <option value="Arizona">Arizona</option>
+            <option value="Arkansas">Arkansas</option>
+            <option value="California">California</option>
+            <option value="Colorado">Colorado</option>
+            <option value="Connecticut">Connecticut</option>
+            <option value="Delaware">Delaware</option>
+            <option value="Florida">Florida</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Hawaii">Hawaii</option>
+            <option value="Idaho">Idaho</option>
+            <option value="Illinois">Illinois</option>
+            <option value="Indiana">Indiana</option>
+            <option value="Iowa">Iowa</option>
+            <option value="Kansas">Kansas</option>
+            <option value="Kentucky">Kentucky</option>
+            <option value="Louisiana">Louisiana</option>
+            <option value="Maine">Maine</option>
+            <option value="Maryland">Maryland</option>
+            <option value="Massachusetts">Massachusetts</option>
+            <option value="Michigan">Michigan</option>
+            <option value="Minnesota">Minnesota</option>
+            <option value="Mississippi">Mississippi</option>
+            <option value="Missouri">Missouri</option>
+            <option value="Montana">Montana</option>
+            <option value="Nebraska">Nebraska</option>
+            <option value="Nevada">Nevada</option>
+            <option value="New Hampshire">New Hampshire</option>
+            <option value="New Jersey">New Jersey</option>
+            <option value="New Mexico">New Mexico</option>
+            <option value="New York">New York</option>
+            <option value="North Carolina">North Carolina</option>
+            <option value="North Dakota">North Dakota</option>
+            <option value="Ohio">Ohio</option>
+            <option value="Oklahoma">Oklahoma</option>
+            <option value="Oregon">Oregon</option>
+            <option value="Pennsylvania">Pennsylvania</option>
+            <option value="Rhode Island">Rhode Island</option>
+            <option value="South Carolina">South Carolina</option>
+            <option value="South Dakota">South Dakota</option>
+            <option value="Tennessee">Tennessee</option>
+            <option value="Texas">Texas</option>
+            <option value="Utah">Utah</option>
+            <option value="Vermont">Vermont</option>
+            <option value="Virginia">Virginia</option>
+            <option value="Washington">Washington</option>
+            <option value="West Virginia">West Virginia</option>
+            <option value="Wisconsin">Wisconsin</option>
+            <option value="Wyoming">Wyoming</option>
+        </select><br>
+        <!-- Buttons -->
         <button type="button" onclick="submitPrediction()">Submit</button>
+        <button type="button" onclick="clearForm()">Clear</button>
     </form>
 
     <div id="result"></div>
 
+    <script>
+async function submitPrediction() {
+    const formData = new FormData(document.getElementById('predictionForm'));
+    const data = {
+        model_name: formData.get('model_name'),
+        state: formData.get('state'),
+        year: 2024
+    };
+
+    const response = await fetch('/predict', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    });
+
+    const resultDiv = document.getElementById('result');
+    if (response.ok) {
+        const result = await response.json();
+
+        if (data.state === "All States") {
+            resultDiv.innerHTML = `
+                <h2>Prediction Results for All States</h2>`;
+            // Update the map for all states
+            updateMap("All States", result);
+        } else {
+            resultDiv.innerHTML = `
+                <h2>Prediction Result</h2>
+                <p><strong>State:</strong> ${result.state}</p>
+                <p><strong>Predicted Result for 2024:</strong> ${result.predicted_result}</p>
+            `;
+            // Update the map for a single state
+            updateMap(result.state, result.predicted_result);
+        }
+    } else {
+        const error = await response.json();
+        resultDiv.innerHTML = `<p>Error: ${error.error}</p>`;
+    }
+}
+
+function updateMap(state, predictedResult) {
+    if (state === "All States") {
+        // Process the result object for all states
+        for (const [stateName, data] of Object.entries(predictedResult)) {
+            const stateId = Object.keys(myUsaMap.statesData).find(
+                key => myUsaMap.statesData[key].fullName === stateName
+            );
+            if (stateId) {
+                const fillColor = getFillColor(data.predicted_result);
+                myUsaMap.statesData[stateId].overrideFill = fillColor;
+                myUsaMap.statesData[stateId].overrideFillEnabled = true;
+            }
+        }
+        myUsaMap.draw(); // Redraw the map with updated colors
+    } else {
+        // Update color for a single state
+        const stateId = Object.keys(myUsaMap.statesData).find(
+            key => myUsaMap.statesData[key].fullName === state
+        );
+        if (stateId) {
+            const fillColor = getFillColor(predictedResult);
+            myUsaMap.statesData[stateId].overrideFill = fillColor;
+            myUsaMap.statesData[stateId].overrideFillEnabled = true;
+            myUsaMap.draw(); // Redraw the map with updated colors
+        }
+    }
+}
+
+function getFillColor(party) {
+    if (party === "Democratic") return "#0000FF"; // Blue for Democratic
+    if (party === "Republican") return "#FF0000"; // Red for Republican
+    return "#FFFFFF"; // Default white
+}
+
+// Clear form function
+function clearForm() {
+    // Reset the form
+    document.getElementById('predictionForm').reset();
+    document.getElementById('result').innerHTML = '';
+
+    // Reset the map colors
+    for (const stateId in myUsaMap.statesData) {
+        if (myUsaMap.statesData.hasOwnProperty(stateId)) {
+            myUsaMap.statesData[stateId].overrideFill = null; // Clear override fill
+            myUsaMap.statesData[stateId].overrideFillEnabled = false; // Disable override fill
+        }
+    }
+
+    // Redraw the map to reflect the reset
+    myUsaMap.draw();
+}
+    </script>
+</body>
+</html>
 
 
     <!--
@@ -69,38 +219,6 @@
 
 
 
-<script>
-    async function submitPrediction() {
-        const formData = new FormData(document.getElementById('predictionForm'));
-        const data = {
-            model_name: formData.get('model_name'),
-            state: formData.get('state'),
-            year: parseInt(formData.get('year'), 10)
-        };
 
-        const response = await fetch('/predict', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(data)
-        });
-
-        const resultDiv = document.getElementById('result');
-        if (response.ok) {
-            const result = await response.json();
-            resultDiv.innerHTML = `
-                <h2>Prediction Result</h2>
-                <p>State: ${result.state}</p>
-                <p>Year: ${result.year}</p>
-                <p>Model: ${result.model}</p>
-                <p>Predicted Result: ${result.predicted_result}</p>
-            `;
-        } else {
-            const error = await response.json();
-            resultDiv.innerHTML = `<p>Error: ${error.error}</p>`;
-        }
-    }
-</script>
 
 
