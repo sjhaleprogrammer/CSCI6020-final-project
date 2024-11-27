@@ -216,3 +216,30 @@ footer {
 .cmm-usa-credit-link {
     text-align: center;
 }
+
+.prediction-table-container {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.prediction-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.prediction-table th, .prediction-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.prediction-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.prediction-table td {
+    font-size: 14px;
+}

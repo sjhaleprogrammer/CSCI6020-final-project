@@ -99,7 +99,20 @@
 </div>
 
 </div>
-
+<div id="prediction-table-container" class="prediction-table-container">
+    <table id="prediction-table" class="prediction-table">
+        <thead>
+            <tr>
+                <th>State</th>
+                <th>Predicted Result</th>
+                <th>Electoral Votes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table rows will be dynamically added here -->
+        </tbody>
+    </table>
+</div>
 <footer>
 <p>© 2024 Election Prediction Platform. All Rights Reserved.</p>
 </footer>
@@ -118,6 +131,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 async function submitPrediction() {
+        // Clear the table data
+        const tableBody = document.getElementById('prediction-table').getElementsByTagName('tbody')[0];
+    tableBody.innerHTML = ''; 
     document.getElementById('result').innerHTML = '';
     document.getElementById('results-summary').innerHTML = '';
     document.getElementById('winner').innerHTML = '';
@@ -216,9 +232,30 @@ function getFillColor(party) {
     return "#FFFFFF"; // Default white
 }
 function updateElectoralVotes(predictions) {
+    const tableBody = document.getElementById('prediction-table').getElementsByTagName('tbody')[0];
+
+    // Clear previous table rows
+    tableBody.innerHTML = '';
+
     for (const [state, data] of Object.entries(predictions)) {
         const votes = electoralVotes["Electoral College Votes"][state] || 0;
 
+        // Create a new row for each state
+        const row = tableBody.insertRow();
+
+        // Insert cells into the row for state, predicted result, and electoral votes
+        const cellState = row.insertCell(0);
+        const cellResult = row.insertCell(1);
+        const cellVotes = row.insertCell(2);
+
+        cellState.textContent = state;
+        cellResult.textContent = data.predicted_result;
+        cellVotes.textContent = votes;
+
+        // Log for debugging
+        console.log(`State: ${state}, Predicted Result: ${data.predicted_result}, Electoral Votes: ${votes}`);
+
+        // Tally the electoral votes based on the prediction
         if (data.predicted_result === "Democratic") {
             democraticTotal += votes;
         } else if (data.predicted_result === "Republican") {
@@ -226,7 +263,7 @@ function updateElectoralVotes(predictions) {
         }
     }
 
-    // Update the results display
+    // Update the results display (tally)
     const resultsDiv = document.getElementById('results-summary');
     resultsDiv.innerHTML = `
         <h3>Electoral Votes Tally</h3>
@@ -237,7 +274,7 @@ function updateElectoralVotes(predictions) {
     // Determine the winner
     const winnerDiv = document.getElementById('winner');
     if (democraticTotal > republicanTotal) {
-        winnerDiv.innerHTML = `<h1>Winner: Kamala Harris</h1>`;
+        winnerDiv.innerHTML = `<h2>Winner: Kamala Harris</h2>`;
     } else if (republicanTotal > democraticTotal) {
         winnerDiv.innerHTML = `<h2>Winner: Donald Trump</h2>`;
     } else {
@@ -251,6 +288,9 @@ function clearForm() {
     document.getElementById('result').innerHTML = '';
     document.getElementById('results-summary').innerHTML = '';
     document.getElementById('winner').innerHTML = '';
+        // Clear the table data
+        const tableBody = document.getElementById('prediction-table').getElementsByTagName('tbody')[0];
+    tableBody.innerHTML = ''; 
 
     // Reset the map colors
     for (const stateId in myUsaMap.statesData) {
