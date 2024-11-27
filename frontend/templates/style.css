@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #002855; /* Deep blue */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 5px solid #FF4B55; /* Bright red border */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+/* Form and Results Containers */
+.form-container, .result-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 45%;
+    max-width: 500px;
+}
+
+.form-container {
+    border-top: 5px solid #FF4B55; /* Red */
+}
+
+.result-container {
+    border-top: 5px solid #005BBB; /* Blue */
+}
+
+/* Form Styles */
+form label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form select, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: #FF4B55; /* Bright red */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #D93844; /* Slightly darker red */
+}
+
+/* Results Section */
+#result, #results-summary, #winner {
+    margin-top: 20px;
+}
+
+#results-summary {
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+#winner {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #005BBB; /* Blue for Democratic winner */
+}
+
+#winner h2 {
+    margin: 0;
+    color: #FF4B55; /* Red for Republican winner */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    border-top: 1px solid #ddd;
+}

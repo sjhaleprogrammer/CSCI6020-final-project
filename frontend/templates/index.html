@@ -4,25 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Election Prediction</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Election Prediction</h1>
-    <form id="predictionForm">
-        <!-- Model Dropdown -->
-        <label for="model">Model Name:</label>
-        <select id="model" name="model_name" required>
-            <option value="" disabled selected>Select a model</option>
-            <option value="decision_tree">Decision Tree</option>
-            <option value="k_nearest_neighbors">K Nearest Neighbors</option>
-            <option value="logistic_regression">Logistic Regression</option>
-            <option value="neural_network">Neural Network</option>
-            <option value="random_forest">Random Forest</option>
-        </select><br>
+    <header>
+        <h1>Election Prediction</h1>
+    </header>
 
-        <!-- State Dropdown -->
-        <label for="state">State:</label>
-        <select id="state" name="state" required>
-            <option value="All States">All States</option>
+    <div class="container">
+        <!-- Form Section -->
+        <div class="form-container">
+            <form id="predictionForm">
+                <label for="model">Model Name:</label>
+                <select id="model" name="model_name" required>
+                    <option value="" disabled selected>Select a model</option>
+                    <option value="decision_tree">Decision Tree</option>
+                    <option value="k_nearest_neighbors">K Nearest Neighbors</option>
+                    <option value="logistic_regression">Logistic Regression</option>
+                    <option value="neural_network">Neural Network</option>
+                    <option value="random_forest">Random Forest</option>
+                </select>
+
+                <label for="state">State:</label>
+                <select id="state" name="state" required>
+                    <option value="All States">All States</option>
             <option value="Alabama">Alabama</option>
             <option value="Alaska">Alaska</option>
             <option value="Arizona">Arizona</option>
@@ -73,15 +78,26 @@
             <option value="West Virginia">West Virginia</option>
             <option value="Wisconsin">Wisconsin</option>
             <option value="Wyoming">Wyoming</option>
-        </select><br>
-        <!-- Buttons -->
+        </select>
+
         <button type="button" onclick="submitPrediction()">Submit</button>
         <button type="button" onclick="clearForm()">Clear</button>
     </form>
-    <div id="result"></div>
-<div id="results-summary"></div>
-<div id="winner"></div>
+</div>
 
+<!-- Results Section -->
+<div class="result-container">
+    <div id="result"></div>
+    <div id="results-summary"></div>
+    <div id="winner"></div>
+</div>
+</div>
+
+<footer>
+<p>© 2024 Election Prediction Platform. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
 
 
     <script>
@@ -97,6 +113,22 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 async function submitPrediction() {
+    document.getElementById('result').innerHTML = '';
+    document.getElementById('results-summary').innerHTML = '';
+    document.getElementById('winner').innerHTML = '';
+
+    // Reset the map colors
+    for (const stateId in myUsaMap.statesData) {
+        if (myUsaMap.statesData.hasOwnProperty(stateId)) {
+            myUsaMap.statesData[stateId].overrideFill = null; // Clear override fill
+            myUsaMap.statesData[stateId].overrideFillEnabled = false; // Disable override fill
+        }
+    }
+
+    // Redraw the map to reflect the reset
+    myUsaMap.draw();
+    republicanTotal = 0;
+    democraticTotal = 0;
     const formData = new FormData(document.getElementById('predictionForm'));
     const data = {
         model_name: formData.get('model_name'),
