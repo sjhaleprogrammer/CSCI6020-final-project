@@ -237,7 +237,7 @@ function updateElectoralVotes(predictions) {
     // Determine the winner
     const winnerDiv = document.getElementById('winner');
     if (democraticTotal > republicanTotal) {
-        winnerDiv.innerHTML = `<h2>Winner: Kamala Harris</h2>`;
+        winnerDiv.innerHTML = `<h1>Winner: Kamala Harris</h1>`;
     } else if (republicanTotal > democraticTotal) {
         winnerDiv.innerHTML = `<h2>Winner: Donald Trump</h2>`;
     } else {

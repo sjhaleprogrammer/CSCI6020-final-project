@@ -87,14 +87,17 @@ form button:hover {
     text-align: left;
 }
 
-#winner {
-    text-align: center;
-    font-size: 1.5rem;
+#winner h1,
+#winner h2 {
+    margin: 0;
+    font-size: 24px; /* Set both h1 and h2 to the same font size */
+}
+
+#winner h1 {
     color: #005BBB; /* Blue for Democratic winner */
 }
 
 #winner h2 {
-    margin: 0;
     color: #FF4B55; /* Red for Republican winner */
 }
 
