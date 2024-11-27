@@ -7,6 +7,47 @@ body {
     color: #333;
 }
 
+/* Navbar styling */
+header {
+    background-color: #003366;  /* Dark blue background */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;  /* Center the navbar items */
+}
+
+nav ul li {
+    margin: 0 20px;  /* Space out the items */
+}
+
+nav ul li a {
+    text-decoration: none;  /* Remove underlines */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s ease;  /* Smooth hover transition */
+}
+
+/* Hover effect for links */
+nav ul li a:hover {
+    background-color: #D64933;  /* Light red/orange on hover */
+    border-radius: 5px;
+}
+
+/* Styling for the "Home" link (active page styling) */
+nav ul li a.active {
+    background-color: #005BBB;  /* Blue background for the active link */
+    border-radius: 5px;
+}
+
 /* Header Styles */
 header {
     background-color: #002855; /* Deep blue */
@@ -242,4 +283,34 @@ footer {
 
 .prediction-table td {
     font-size: 14px;
+}
+
+/* About page styling */
+.about-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-container p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Styling for the table header label */
+.table-header {
+    text-align: center;
+    margin-bottom: 20px;  /* Space below the label */
+}
+
+.table-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #003366;  /* Dark blue color for the label */
+    margin: 0;
+    padding: 10px;
+    background-color: #e0f7fa;  /* Light blue background for the label */
+    border-radius: 8px;
 }

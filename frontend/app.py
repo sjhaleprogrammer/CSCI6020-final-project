@@ -13,6 +13,12 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     return render_template('index.html')  
+
+@app.route('/about')
+def about():
+    return render_template('about.html') 
+
+
 # Dynamically resolve the file path for electoral_votes.csv
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))  # Directory of app.py
 ELECTORAL_VOTES_PATH = os.path.join(BASE_DIR, '..', 'data_raw', 'electoral_votes.csv')

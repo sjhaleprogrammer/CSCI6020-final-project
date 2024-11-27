@@ -1,0 +1,112 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Election Prediction</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="about-container">
+        <div id="prediction-table-container" class="prediction-table-container">
+            <table id="prediction-table" class="prediction-table">
+                <div class="table-header">
+                    <h2>Example of 2020 Data Used to Train Our Models</h2>
+                </div>
+                <table id="data-table" class="data-table">
+                    <thead>
+                        <tr>
+                            <th>State</th>
+                            <th>Predicted Result</th>
+                            <th>Electoral Votes</th>
+                            <th>Nationwide Inflation (%)</th>
+                            <th>In Recession (Y/N)</th>
+                            <th>Population</th>
+                            <th>Unemployment Rate (%)</th>
+                            <th>Median Household Income</th>
+                            <th>% with Bachelor's Degree or Higher</th>
+                            <th>% Without Healthcare Coverage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Alabama</td>
+                            <td>Republican</td>
+                            <td>9</td>
+                            <td>1.3</td>
+                            <td>No</td>
+                            <td>4,863,300</td>
+                            <td>6</td>
+                            <td>$46,257</td>
+                            <td>24.5</td>
+                            <td>9.4</td>
+                        </tr>
+                        <tr>
+                            <td>Alaska</td>
+                            <td>Republican</td>
+                            <td>3</td>
+                            <td>1.3</td>
+                            <td>No</td>
+                            <td>741,894</td>
+                            <td>6.6</td>
+                            <td>$76,440</td>
+                            <td>29.7</td>
+                            <td>13.7</td>
+                        </tr>
+                        <tr>
+                            <td>Arizona</td>
+                            <td>Republican</td>
+                            <td>11</td>
+                            <td>1.3</td>
+                            <td>No</td>
+                            <td>6,931,071</td>
+                            <td>5.5</td>
+                            <td>$51,340</td>
+                            <td>28.9</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Arkansas</td>
+                            <td>Republican</td>
+                            <td>6</td>
+                            <td>1.3</td>
+                            <td>No</td>
+                            <td>2,988,248</td>
+                            <td>4</td>
+                            <td>$44,334</td>
+                            <td>22</td>
+                            <td>8.5</td>
+                        </tr>
+                        <tr>
+                            <td>California</td>
+                            <td>Democratic</td>
+                            <td>55</td>
+                            <td>1.3</td>
+                            <td>No</td>
+                            <td>39,250,017</td>
+                            <td>5.5</td>
+                            <td>$67,739</td>
+                            <td>33.9</td>
+                            <td>7.3</td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Election Prediction Platform. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
