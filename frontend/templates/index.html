@@ -78,10 +78,24 @@
         <button type="button" onclick="submitPrediction()">Submit</button>
         <button type="button" onclick="clearForm()">Clear</button>
     </form>
-
     <div id="result"></div>
+<div id="results-summary"></div>
+<div id="winner"></div>
+
+
 
     <script>
+        // Store electoral votes data
+let electoralVotes = {};
+let republicanTotal = 0;
+let democraticTotal = 0;
+
+document.addEventListener("DOMContentLoaded", async () => {
+    // Fetch electoral votes data when the page loads
+    const response = await fetch('/electoral_votes');
+    electoralVotes = await response.json();
+});
+
 async function submitPrediction() {
     const formData = new FormData(document.getElementById('predictionForm'));
     const data = {
@@ -107,14 +121,24 @@ async function submitPrediction() {
                 <h2>Prediction Results for All States</h2>`;
             // Update the map for all states
             updateMap("All States", result);
+            updateElectoralVotes(result);
         } else {
+            // Extract electoral votes for the selected state
+            const votes = electoralVotes["Electoral College Votes"][result.state] || 0;
+
             resultDiv.innerHTML = `
                 <h2>Prediction Result</h2>
                 <p><strong>State:</strong> ${result.state}</p>
                 <p><strong>Predicted Result for 2024:</strong> ${result.predicted_result}</p>
             `;
+
             // Update the map for a single state
             updateMap(result.state, result.predicted_result);
+
+            // Update electoral tally for the single state
+            updateElectoralVotes({
+                [result.state]: { predicted_result: result.predicted_result }
+            });
         }
     } else {
         const error = await response.json();
@@ -135,7 +159,6 @@ function updateMap(state, predictedResult) {
                 myUsaMap.statesData[stateId].overrideFillEnabled = true;
             }
         }
-        myUsaMap.draw(); // Redraw the map with updated colors
     } else {
         // Update color for a single state
         const stateId = Object.keys(myUsaMap.statesData).find(
@@ -145,9 +168,9 @@ function updateMap(state, predictedResult) {
             const fillColor = getFillColor(predictedResult);
             myUsaMap.statesData[stateId].overrideFill = fillColor;
             myUsaMap.statesData[stateId].overrideFillEnabled = true;
-            myUsaMap.draw(); // Redraw the map with updated colors
         }
     }
+    myUsaMap.draw();
 }
 
 function getFillColor(party) {
@@ -155,12 +178,42 @@ function getFillColor(party) {
     if (party === "Republican") return "#FF0000"; // Red for Republican
     return "#FFFFFF"; // Default white
 }
+function updateElectoralVotes(predictions) {
+    for (const [state, data] of Object.entries(predictions)) {
+        const votes = electoralVotes["Electoral College Votes"][state] || 0;
 
+        if (data.predicted_result === "Democratic") {
+            democraticTotal += votes;
+        } else if (data.predicted_result === "Republican") {
+            republicanTotal += votes;
+        }
+    }
+
+    // Update the results display
+    const resultsDiv = document.getElementById('results-summary');
+    resultsDiv.innerHTML = `
+        <h3>Electoral Votes Tally</h3>
+        <p><strong>Democratic:</strong> ${democraticTotal}</p>
+        <p><strong>Republican:</strong> ${republicanTotal}</p>
+    `;
+
+    // Determine the winner
+    const winnerDiv = document.getElementById('winner');
+    if (democraticTotal > republicanTotal) {
+        winnerDiv.innerHTML = `<h2>Winner: Kamala Harris</h2>`;
+    } else if (republicanTotal > democraticTotal) {
+        winnerDiv.innerHTML = `<h2>Winner: Donald Trump</h2>`;
+    } else {
+        winnerDiv.innerHTML = `<h2>No Winner Yet</h2>`;
+    }
+}
 // Clear form function
 function clearForm() {
     // Reset the form
     document.getElementById('predictionForm').reset();
     document.getElementById('result').innerHTML = '';
+    document.getElementById('results-summary').innerHTML = '';
+    document.getElementById('winner').innerHTML = '';
 
     // Reset the map colors
     for (const stateId in myUsaMap.statesData) {
@@ -172,6 +225,8 @@ function clearForm() {
 
     // Redraw the map to reflect the reset
     myUsaMap.draw();
+    republicanTotal = 0;
+    democraticTotal = 0;
 }
     </script>
 </body>

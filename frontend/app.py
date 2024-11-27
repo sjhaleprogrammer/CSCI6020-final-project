@@ -13,6 +13,17 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     return render_template('index.html')  
+# Dynamically resolve the file path for electoral_votes.csv
+BASE_DIR = os.path.abspath(os.path.dirname(__file__))  # Directory of app.py
+ELECTORAL_VOTES_PATH = os.path.join(BASE_DIR, '..', 'data_raw', 'electoral_votes.csv')
+electoral_votes = pd.read_csv(ELECTORAL_VOTES_PATH)
+
+@app.route('/electoral_votes', methods=['GET'])
+def get_electoral_votes():
+    """
+    Serve the electoral votes data as JSON.
+    """
+    return electoral_votes.set_index('State').to_json()
 
 @app.route('/predict', methods=['POST'])
 def predict_election():
