@@ -6,7 +6,7 @@ import torch
 
 # Add the parent directory of 'python/' to sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../')))
-from python.inference import predict_election_from_state_with_metrics, predict_election_for_all_states
+from python.inference import predict_election_from_state_with_metrics, predict_election_for_all_states_with_metrics
 
 app = Flask(__name__)
 
@@ -76,7 +76,7 @@ def predict_all_states():
             return jsonify({"error": "model_name is required"}), 400
 
         # Call the core function to predict all states
-        results = predict_election_for_all_states(model_name, year)
+        results = predict_election_for_all_states_with_metrics(model_name, year)
 
         return jsonify(results)
 

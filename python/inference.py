@@ -156,19 +156,21 @@ def predict_election_from_state_with_metrics(model_name, state, year=2024):
         "metrics": metrics
     }
 
-def predict_election_for_all_states(model_name, year=2024):
+def predict_election_for_all_states_with_metrics(model_name, year=2024):
     """
-    Predict election results for all states for a given year using the specified model.
+    Predict election results for all states for a given year using the specified model,
+    and include model metrics in the response.
 
     Args:
         model_name (str): The name of the model to use (e.g., "logistic_regression").
         year (int): The election year.
 
     Returns:
-        dict: A dictionary with state names as keys and prediction results as values.
+        dict: A dictionary containing predictions for all states and model metrics.
     """
-    # Load model and preprocessor
+    # Load model, preprocessor, and metrics
     model, preprocessor = load_model_and_preprocessor(model_name)
+    metrics = load_metrics(model_name)
 
     # Load the dataset
     if not os.path.exists(dataset_path):
@@ -201,10 +203,17 @@ def predict_election_for_all_states(model_name, year=2024):
                 predicted_result = "Democratic" if prediction[0] == 1 else "Republican"
 
             # Store result
-            predictions[state] = {"predicted_result": predicted_result}
+            predictions[state] = {
+                "predicted_result": predicted_result,
+                "metrics": metrics
+            }
 
         except Exception as e:
             # Handle errors for individual states
             predictions[state] = {"error": str(e)}
 
-    return predictions
+    # Combine predictions with model metrics
+    return {
+        "predictions": predictions,
+        "metrics": metrics
+    }
