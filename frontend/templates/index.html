@@ -24,18 +24,17 @@
         <div class="form-container">
             <form id="predictionForm">
                 <label for="model">Model Name:</label>
-                <select id="model" name="model_name">
+                <select id="model" name="model_name" required oncharge="submitPrediction()">
                     <option value="decision_tree">Decision Tree</option>
                     <option value="k_nearest_neighbors">K Nearest Neighbors</option>
                     <option value="logistic_regression">Logistic Regression</option>
                     <option value="neural_network">Neural Network</option>
                     <option value="random_forest">Random Forest</option>
                 </select>
-             </form>
-             
-             <div id="metrics-summary"></div>
-             
-    </div>
+          
+                
+    </form>
+</div>
 <!-- Results Section -->
 <div class="result-container">
     <div id="result"></div>
@@ -170,7 +169,6 @@ function getFillColor(party) {
     return "#FFFFFF"; // Default white
 }
 function updateElectoralVotes(predictions) {
-    
     const tableBody = document.getElementById('prediction-table').getElementsByTagName('tbody')[0];
 
     // Clear previous table rows
@@ -192,7 +190,7 @@ function updateElectoralVotes(predictions) {
         cellVotes.textContent = votes;
 
         // Log for debugging
-        //console.log(`State: ${state}, Predicted Result: ${data.predicted_result}, Electoral Votes: ${votes}`);
+        console.log(`State: ${state}, Predicted Result: ${data.predicted_result}, Electoral Votes: ${votes}`);
 
         // Tally the electoral votes based on the prediction
         if (data.predicted_result === "Democratic") {
@@ -201,15 +199,8 @@ function updateElectoralVotes(predictions) {
             republicanTotal += votes;
         }
     }
-    
-    
-    const metricsDiv = document.getElementById('metrics-summary');
-    metricsDiv.innerHTML = `
-        <h3>Metrics</h3>
-        <p><strong>Accuracy:</strong> ${predictions.metrics.accuracy}</p>
-        <p>${predictions.metrics.classification_report}</p>
-        
-    `;
+
+
     
 
     // Update the results display (tally)
@@ -219,7 +210,6 @@ function updateElectoralVotes(predictions) {
         <p><strong>Democratic:</strong> ${democraticTotal}</p>
         <p><strong>Republican:</strong> ${republicanTotal}</p>
     `;
-  
 
     // Determine the winner
     const winnerDiv = document.getElementById('winner');
