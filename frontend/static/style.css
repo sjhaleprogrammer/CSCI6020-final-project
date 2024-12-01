@@ -7,47 +7,6 @@ body {
     color: #333;
 }
 
-/* Navbar styling */
-header {
-    background-color: #003366;  /* Dark blue background */
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;  /* Center the navbar items */
-}
-
-nav ul li {
-    margin: 0 20px;  /* Space out the items */
-}
-
-nav ul li a {
-    text-decoration: none;  /* Remove underlines */
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px;
-    transition: background-color 0.3s ease;  /* Smooth hover transition */
-}
-
-/* Hover effect for links */
-nav ul li a:hover {
-    background-color: #D64933;  /* Light red/orange on hover */
-    border-radius: 5px;
-}
-
-/* Styling for the "Home" link (active page styling) */
-nav ul li a.active {
-    background-color: #005BBB;  /* Blue background for the active link */
-    border-radius: 5px;
-}
-
 /* Header Styles */
 header {
     background-color: #002855; /* Deep blue */
@@ -61,6 +20,40 @@ header h1 {
     margin: 0;
     font-size: 2.5rem;
     letter-spacing: 1px;
+}
+
+/* Navbar Styling */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center the navbar items */
+}
+
+nav ul li {
+    margin: 0 20px; /* Space out the items */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underlines */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover effect for links */
+nav ul li a:hover {
+    background-color: #D64933; /* Light red/orange on hover */
+    border-radius: 5px;
+}
+
+/* Styling for the "Home" link (active page styling) */
+nav ul li a.active {
+    background-color: #005BBB; /* Blue background for the active link */
+    border-radius: 5px;
 }
 
 /* Main Container */
@@ -79,6 +72,31 @@ header h1 {
     padding: 20px;
     width: 45%;
     max-width: 500px;
+}
+
+.classification-result-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto;
+    display: none;
+}
+
+.prediction-table-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    display: none;
+}
+
+.classification-table {
+    display: block;
+    margin-top: 10px; /* Optional: Add some space between the header and the table */
 }
 
 .form-container {
@@ -151,6 +169,7 @@ footer {
     border-top: 1px solid #ddd;
 }
 
+/* Map Styles */
 .cmm-usa {
     display: none;
     margin: 0 auto;
@@ -258,8 +277,9 @@ footer {
     text-align: center;
 }
 
+/* Prediction Table Styles */
 .prediction-table-container {
-    width: 100%;
+    width: 80%;
     margin-top: 20px;
     padding: 10px;
 }
@@ -283,12 +303,16 @@ footer {
 
 .prediction-table td {
     font-size: 14px;
+    max-width: 150px; /* Adjust the width as needed */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
-/* About page styling */
+/* About Page Styling */
 .about-container {
     padding: 20px;
-    max-width: 800px;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
 }
@@ -299,18 +323,72 @@ footer {
     margin-bottom: 15px;
 }
 
-/* Styling for the table header label */
+/* Styling for the Table Header Label */
 .table-header {
     text-align: center;
-    margin-bottom: 20px;  /* Space below the label */
+    margin-bottom: 20px; /* Space below the label */
+}
+
+.about-me-header p {
+    margin-bottom: 20px; /* Space below the label */
 }
 
 .table-header h2 {
     font-size: 24px;
     font-weight: bold;
-    color: #003366;  /* Dark blue color for the label */
+    color: #003366; /* Dark blue color for the label */
     margin: 0;
     padding: 10px;
-    background-color: #e0f7fa;  /* Light blue background for the label */
+    background-color: #e0f7fa; /* Light blue background for the label */
     border-radius: 8px;
+}
+.about-table-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.about-me-text {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.about-me-text td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.about-me-text th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.about-table th, .about-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.about-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.about-table td {
+    font-size: 14px;
+    max-width: 150px; /* Adjust the width as needed */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
