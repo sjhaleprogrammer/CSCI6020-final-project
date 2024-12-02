@@ -1,6 +1,6 @@
 ---
 
-# 🗳️ Election Prediction API
+# 🗳️ Election Prediction App
 
 Welcome to the **Election Prediction API**, a Flask-powered service that predicts the election outcome for a given state and year. The API uses pre-trained machine learning models to deliver accurate predictions, enabling insightful analyses.
 
@@ -24,7 +24,7 @@ Welcome to the **Election Prediction API**, a Flask-powered service that predict
 
 ## 📋 Prerequisites
 
-- **Python 3.9** or above
+- **Python 3.9** recommended or above
 - **Deps in Requirments.txt**
 
 
@@ -34,13 +34,15 @@ Welcome to the **Election Prediction API**, a Flask-powered service that predict
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/election-prediction-api.git
-   cd election-prediction-api
+   https://github.com/sjhaleprogrammer/CSCI6020-final-project.git
+   cd CSCI6020-final-project
    ```
 
 2. Create a virtual environment:
    ```
-   python3 -m venv venv
+   py -m venv venv # For Windows
+   python3 -m venv venv # For Linux/Mac
+
    source venv/bin/activate  # For Linux/Mac
    venv\Scripts\activate     # For Windows
    ```
