@@ -181,15 +181,15 @@ async function submitPrediction() {
         body: JSON.stringify(data)
     });
     function formatClassificationReport(report) {
-        document.querySelector('.classification-result-container').style.display = 'block';
+    document.querySelector('.classification-result-container').style.display = 'block';
     let html = '<table border="1"><tr><th>Class</th><th>F1-Score</th><th>Precision</th><th>Recall</th><th>Support</th></tr>';
     for (const [key, value] of Object.entries(report)) {
         if (key === 'accuracy') {
-            html += `<tr><td colspan="4"><strong>Accuracy</strong></td><td>${value}</td></tr>`;
+            html += `<tr><td colspan="4"><strong>Accuracy</strong></td><td><b>${value.toFixed(4)}</b</td></tr>`;
         } else if (key === 'macro avg' || key === 'weighted avg') {
-            html += `<tr><td><strong>${key}</strong></td><td>${value['f1-score']}</td><td>${value['precision']}</td><td>${value['recall']}</td><td>${value['support']}</td></tr>`;
+            html += `<tr><td><strong>${key}</strong></td><td>${value['f1-score'].toFixed(4)}</td><td>${value['precision'].toFixed(4)}</td><td>${value['recall'].toFixed(4)}</td><td>${value['support']}</td></tr>`;
         } else {
-            html += `<tr><td>${key}</td><td>${value['f1-score']}</td><td>${value['precision']}</td><td>${value['recall']}</td><td>${value['support']}</td></tr>`;
+            html += `<tr><td>${key}</td><td>${value['f1-score'].toFixed(4)}</td><td>${value['precision'].toFixed(4)}</td><td>${value['recall'].toFixed(4)}</td><td>${value['support']}</td></tr>`;
         }
     }
     html += '</table>';

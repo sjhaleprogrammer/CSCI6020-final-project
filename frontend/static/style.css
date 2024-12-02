@@ -79,9 +79,12 @@ nav ul li a.active {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 50%;
+    width: 45%;
+    max-width: 500px;
     margin: 0 auto;
     display: none;
+    justify-content: center;
+    align-items: center;
 }
 
 .prediction-table-container {
@@ -96,7 +99,9 @@ nav ul li a.active {
 
 .classification-table {
     display: block;
-    margin-top: 10px; /* Optional: Add some space between the header and the table */
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .form-container {
