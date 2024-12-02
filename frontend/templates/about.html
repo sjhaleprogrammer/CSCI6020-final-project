@@ -46,7 +46,20 @@
                         <table id="about-table" class="about-me-text">
                 <div class="table-header">
                     <h2>Training Model Information</h2>
-                    <p>lorem ipsem</p>
+                    <p> <b>Model 1. Logistic Regression (LogisticRegression from sklearn linear_model):</b><br>
+                    Provides a parametric, interpretable machine learning algorithm used for binary classification tasks. It is particularly effective when the relationship between features and the target is linear or near-linear. Logistic regression assumes independent features and works best when the data is linearly separable.</p>
+                    
+                    <p><b>Model 2. k-Nearest Neighbors (KNeighborsClassifier from sklearn neighbors):</b><br>
+                    Provides an interpretable, non-parametric approach to classify election outcomes based on historical data. Suitable for cases where relationships between features are complex and non-linear. Target (y_train, y_val) is the dependent variable (Election Result).</p>
+                    
+                    <p><b>Model 3. Decision Tree (DecisionTreeClassifier from sklearn tree):</b><br>
+                    The Decision Tree model is a non-parametric, tree-based algorithm that splits data recursively based on feature values to classify outcomes. At each split (or "node"), it evaluates a feature and splits the data to maximize information gain, effectively organizing data into branches that lead to classification results.</p>
+                    
+                    <p><b>Model 4. Random Forest (RandomForestClassifier from sklearn ensemble):</b><br>
+                    The Random Forest model is an ensemble learning algorithm that constructs multiple decision trees during training and merges their predictions for improved accuracy and reduced overfitting. It is particularly effective for classification tasks with non-linear relationships and high-dimensional data.</p>
+                    
+                    <p><b>Model 5. Binary Classification Neural Network (Pytorch is used to define, train, and evaluate the model):</b><br>
+                    The Binary Classification Neural Network implementation evaluates election results using a neural network trained on processed data. Learns complex, non-linear relationships between numerical and categorical features using multiple layers of computation.</p>
                 </div>
             </div>
                 <table id="about-table" class="about-table">
